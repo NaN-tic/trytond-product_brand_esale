@@ -1,0 +1,62 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+#, fuzzy
+msgctxt "field:product.brand,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+#, fuzzy
+msgctxt "field:product.brand,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+#, fuzzy
+msgctxt "field:product.brand,id:"
+msgid "ID"
+msgstr "Identificador"
+
+#, fuzzy
+msgctxt "field:product.brand,name:"
+msgid "Name"
+msgstr "Nombre"
+
+#, fuzzy
+msgctxt "field:product.brand,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+#, fuzzy
+msgctxt "field:product.brand,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+#, fuzzy
+msgctxt "field:product.brand,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:product.template,brand:"
+msgid "Brand"
+msgstr "Marca"
+
+msgctxt "model:ir.action,name:act_product_brand"
+msgid "Brands"
+msgstr "Marcas"
+
+msgctxt "model:ir.ui.menu,name:menu_product_brand"
+msgid "Brands"
+msgstr "Marcas"
+
+msgctxt "model:product.brand,name:"
+msgid "Brand"
+msgstr "Marca"
+
+msgctxt "view:product.brand:"
+msgid "Brand"
+msgstr "Marca"
+
+msgctxt "view:product.brand:"
+msgid "Brands"
+msgstr "Marcas"
