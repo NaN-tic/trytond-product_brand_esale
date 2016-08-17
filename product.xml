@@ -55,6 +55,6 @@
         </record>
 
         <menuitem action="act_product_brand" id="menu_product_brand"
-            parent="product_configuration.menu_configuration" sequence="50"/>
+            parent="product.menu_configuration" sequence="50"/>
     </data>
 </tryton>
