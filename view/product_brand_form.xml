@@ -4,4 +4,11 @@
 <form string="Brand">
     <label name="name"/>
     <field name="name"/>
+    <label name="active"/>
+    <field name="active"/>
+    <label name="url"/>
+    <field name="url"/>
+    <label name="slug"/>
+    <field name="slug"/>
+    <field name="products" colspan="4" widget="many2many"/>
 </form>
