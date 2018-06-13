@@ -7,5 +7,4 @@ from . import product
 def register():
     Pool.register(
         product.Brand,
-        product.Template,
-        module='product_brand', type_='model')
+        module='product_brand_esale', type_='model')

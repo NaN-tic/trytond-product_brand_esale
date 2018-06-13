@@ -1,6 +1,14 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:product.brand:"
+msgid ""
+"There is another brand with the same slug. The slug of the active brands "
+"must be unique!"
+msgstr ""
+"Hi ha una altre marca amb el mateix slug. L'slug de les marques actives ha "
+"de ser únic!"
 
 msgctxt "field:product.brand,create_date:"
 msgid "Create Date"
@@ -10,9 +18,25 @@ msgctxt "field:product.brand,create_uid:"
 msgid "Create User"
 msgstr "Usuari creació"
 
+msgctxt "field:product.brand,description:"
+msgid "Brand Description"
+msgstr "Descripció de la marca"
+
 msgctxt "field:product.brand,id:"
 msgid "ID"
 msgstr "ID"
+
+msgctxt "field:product.brand,metadescription:"
+msgid "Meta Description"
+msgstr "Meta Description"
+
+msgctxt "field:product.brand,metakeywords:"
+msgid "Meta Keywords"
+msgstr "Meta Keywords"
+
+msgctxt "field:product.brand,metatitle:"
+msgid "Meta Title"
+msgstr "Meta Title"
 
 msgctxt "field:product.brand,name:"
 msgid "Name"
@@ -21,6 +45,14 @@ msgstr "Nom"
 msgctxt "field:product.brand,rec_name:"
 msgid "Name"
 msgstr "Nom"
+
+msgctxt "field:product.brand,slug:"
+msgid "Slug"
+msgstr "Slug"
+
+msgctxt "field:product.brand,url:"
+msgid "URL"
+msgstr "URL"
 
 msgctxt "field:product.brand,write_date:"
 msgid "Write Date"
@@ -34,11 +66,19 @@ msgctxt "field:product.template,brand:"
 msgid "Brand"
 msgstr "Marca"
 
-msgctxt "model:ir.action,name:act_product_brand"
+msgctxt "help:product.brand,metadescription:"
+msgid ""
+"Almost all search engines recommend it to be shorter than 155 characters of "
+"plain text"
+msgstr ""
+"La majoria de motors de cerca recomanen que sigui menor de 155 caracters de "
+"text plà"
+
+msgctxt "model:ir.action,name:"
 msgid "Brands"
 msgstr "Marques"
 
-msgctxt "model:ir.ui.menu,name:menu_product_brand"
+msgctxt "model:ir.ui.menu,name:"
 msgid "Brands"
 msgstr "Marques"
 

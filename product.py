@@ -1,22 +1,23 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
-from trytond.model import ModelView, ModelSQL, fields, Unique
+from trytond.model import fields, Unique
 from trytond.pool import PoolMeta
 
-from trytond.modules.product.product import STATES, DEPENDS
 from slug import slug
 
-__all__ = ['Brand', 'Template']
+__all__ = ['Brand']
 
 
-class Brand(ModelSQL, ModelView):
-    '''Brand'''
+class Brand:
+    __metaclass__ = PoolMeta
     __name__ = 'product.brand'
-    name = fields.Char('Name', required=True, translate=True)
-    active = fields.Boolean('Active')
     url = fields.Char('URL', translate=True)
     slug = fields.Char('Slug', translate=True)
-    products = fields.One2Many('product.template', 'brand', 'Products')
+    metadescription = fields.Char('Meta Description', translate=True,
+        help=('Almost all search engines recommend it to be shorter than 155 '
+            'characters of plain text'))
+    metakeywords = fields.Char('Meta Keywords', translate=True)
+    metatitle = fields.Char('Meta Title', translate=True)
 
     @classmethod
     def __setup__(cls):
@@ -24,13 +25,9 @@ class Brand(ModelSQL, ModelView):
         t = cls.__table__()
         cls._sql_constraints += [
             ('slug_uniq', Unique(t, t.active, t.slug),
-                'There is another brand with the same slug.\n'
-                'The slug of the active brands must be unique!'),
+                ('There is another brand with the same slug. The slug of the '
+                    'active brands must be unique!')),
             ]
-
-    @staticmethod
-    def default_active():
-        return True
 
     @fields.depends('name', 'slug', 'active')
     def on_change_with_slug(self):
@@ -38,10 +35,3 @@ class Brand(ModelSQL, ModelView):
             return slug(self.name)
         else:
             return self.slug
-
-
-class Template:
-    __name__ = 'product.template'
-    __metaclass__ = PoolMeta
-    brand = fields.Many2One('product.brand', 'Brand', states=STATES,
-        depends=DEPENDS)
