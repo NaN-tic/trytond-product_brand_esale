@@ -1,6 +1,14 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:product.brand:"
+msgid ""
+"There is another brand with the same slug. The slug of the active brands "
+"must be unique!"
+msgstr ""
+"Hay otra marca con el mismo slug. El slug de las marcas activas debe ser "
+"único!"
 
 msgctxt "field:product.brand,create_date:"
 msgid "Create Date"
@@ -14,6 +22,18 @@ msgctxt "field:product.brand,id:"
 msgid "ID"
 msgstr "ID"
 
+msgctxt "field:product.brand,metadescription:"
+msgid "Meta Description"
+msgstr "Meta Description"
+
+msgctxt "field:product.brand,metakeywords:"
+msgid "Meta Keywords"
+msgstr "Meta Keywords"
+
+msgctxt "field:product.brand,metatitle:"
+msgid "Meta Title"
+msgstr "Meta Title"
+
 msgctxt "field:product.brand,name:"
 msgid "Name"
 msgstr "Nombre"
@@ -21,6 +41,14 @@ msgstr "Nombre"
 msgctxt "field:product.brand,rec_name:"
 msgid "Name"
 msgstr "Nombre"
+
+msgctxt "field:product.brand,slug:"
+msgid "Slug"
+msgstr "Slug"
+
+msgctxt "field:product.brand,url:"
+msgid "URL"
+msgstr "URL"
 
 msgctxt "field:product.brand,write_date:"
 msgid "Write Date"
@@ -34,11 +62,19 @@ msgctxt "field:product.template,brand:"
 msgid "Brand"
 msgstr "Marca"
 
-msgctxt "model:ir.action,name:act_product_brand"
+msgctxt "help:product.brand,metadescription:"
+msgid ""
+"Almost all search engines recommend it to be shorter than 155 characters of "
+"plain text"
+msgstr ""
+"La mayoría de los motores de búsqueda recomiendan un texto plano de no más "
+"de 155 caracteres."
+
+msgctxt "model:ir.action,name:"
 msgid "Brands"
 msgstr "Marcas"
 
-msgctxt "model:ir.ui.menu,name:menu_product_brand"
+msgctxt "model:ir.ui.menu,name:"
 msgid "Brands"
 msgstr "Marcas"
 

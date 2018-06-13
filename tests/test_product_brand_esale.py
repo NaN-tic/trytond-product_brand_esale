@@ -8,7 +8,7 @@ from trytond.tests.test_tryton import ModuleTestCase
 
 class TestCase(ModuleTestCase):
     'Test module'
-    module = 'product_brand'
+    module = 'product_brand_esale'
 
 
 def suite():
