@@ -8,8 +8,7 @@ from slug import slug
 __all__ = ['Brand']
 
 
-class Brand:
-    __metaclass__ = PoolMeta
+class Brand(metaclass=PoolMeta):
     __name__ = 'product.brand'
     url = fields.Char('URL', translate=True)
     slug = fields.Char('Slug', translate=True)
